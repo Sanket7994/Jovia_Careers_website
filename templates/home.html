@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      {{company_name}} Careers
+    </title>
+    <meta name="author" content="Sanket">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="templates/style.css" type="text/css">
+    <link type="image/png" sizes="16x16" rel="icon" href="https://JovianCareerswebsite.sanketdb72332.repl.co/static/webIcon.png">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center mt-2 mb-3">
+        {{company_name}} Careers
+      </h1>
+      <style>
+        #banner {
+          width: 100%;
+          height: 360px;
+          object-fit: cover;
+        }
+      </style>
+      <img class="img-fluid" id="banner" src="https://JovianCareerswebsite.sanketdb72332.repl.co/static/image2.jpg" alt="Home Banner">
+      <h2 class="text-center mt-2 mb-3">
+        About {{company_name}}
+      </h2>
+      <p class='lead'>
+      Curabitur nec diam orci. Fusce blandit sapien non ligula cursus, id consequat est maximus. Sed at vehicula metus, sit amet dignissim ligula. Donec et condimentum lacus. Maecenas odio urna, cursus non dolor vel, pretium mattis sem. Sed congue interdum malesuada. Duis vitae varius tellus. Integer ut malesuada lectus. Aliquam varius pulvinar mollis. Suspendisse faucibus convallis iaculis. Phasellus vel tellus at quam varius ultricies. Integer consequat suscipit leo, et auctor sapien lobortis nec. Aenean lacinia odio quis odio porttitor, ac laoreet libero facilisis. Aenean sagittis ac ipsum eget accumsan. Mauris porttitor in mauris eu sagittis. Etiam iaculis venenatis elementum.
+      </p>
+      <h2 class="text-center mt-2 mb-3">
+        Open Positions
+      </h2>
+      <div>
+        {% for job in jobs %}
+          {% include 'job_style.html' %}
+        {% endfor %}
+      </div>
+      <div class='text-center'>
+        <button type="button" class="btn btn-secondary btn-lg">
+          Contact Us
+        </button>
+        <p class="mt-4">
+          <hr>
+          &lt;&lt;&lt;&lt; &copy; Copyright 2023, Jovian &gt;&gt;&gt;&gt;
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
