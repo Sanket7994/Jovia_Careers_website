@@ -13,6 +13,7 @@
     <link type="image/png" sizes="16x16" rel="icon" href="https://JovianCareerswebsite.sanketdb72332.repl.co/static/webIcon.png">
   </head>
   <body>
+    {% include "nav.html" %}
     <div class="container">
       <h1 class="text-center mt-2 mb-3">
         {{company_name}} Careers
@@ -40,14 +41,14 @@
         {% endfor %}
       </div>
       <div class='text-center'>
-        <button type="button" class="btn btn-secondary btn-lg">
-          Contact Us
-        </button>
-        <p class="mt-4">
-          <hr>
-          &lt;&lt;&lt;&lt; &copy; Copyright 2023, Jovian &gt;&gt;&gt;&gt;
+        <p class='text-center'>
+          Have any doubt, Please fill free to connect.
         </p>
+        <a type="button" class="btn btn-secondary btn-lg" href="mailto:hellojovin.ai?subject=Query%20regarding%20the%20job&body=Fill%20the%20required%20details%3A%0D%0A%0D%0A1.%20Name%3A%20%3CEnter%20your%20name%20here%3E%0D%0A2.%20Your%20Query%3A%20%3CPlease%20Enter%20your%20query%3E%0D%0A">
+          Contact Us
+        </a>
       </div>
     </div>
+    {% include 'footer.html' %}
   </body>
 </html>
