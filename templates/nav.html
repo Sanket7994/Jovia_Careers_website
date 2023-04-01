@@ -1,9 +1,37 @@
-<nav class="navbar bg-body-tertiary shadow-sm fixed-top bg-white">
+<header class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="/static/webIcon.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-      {{company_name}}.AI
+    <a class="navbar-brand align-items-center me-auto" href="/">
+      <img src="/static/webIcon.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+      <span class="h4 mb-0">
+        {{company_name}}.ai
+      </span>
     </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary" type="submit">
+              Search
+            </button>
+          </form>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="btn btn-outline-dark" href="#">
+            Login
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-warning" href="#">
+            Sign up
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
-</nav>
-<div style='height: 56px'></div>
+</header>
