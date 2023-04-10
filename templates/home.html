@@ -3,14 +3,20 @@
   <head>
     <meta charset="UTF-8">
     <title class="align-items-center">{{company_name}} Careers</title>
-    <link rel="stylesheet" type="text/css" href="templates/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="templates/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link type="image/png" sizes="16x16" rel="icon" href="https://JovianCareerswebsite.sanketdb72332.repl.co/static/webIcon.png">    
     <style>
-      #banner {
+      #banner_0 {
         width: 100%;
-        height: 390px;
+        height: 480px;
+        object-fit: cover;     
+      }
+
+      #banner_1 {
+        width: 100%;
+        height: 350px;
         object-fit: cover;     
       }
 
@@ -69,7 +75,7 @@
       
       .overlay {
         position: absolute; 
-        background: rgba(57, 57, 57, 0.4);
+        background: rgba(57, 57, 57, 0.45);
         display: flex;
         align-items: top;
         justify-content: top;
@@ -82,14 +88,14 @@
     {% include "nav.html" %}
     <div class="container">
       <li class="image_wrapper">
-        <img class="img-fluid rounded" id="banner" src="https://JovianCareerswebsite.sanketdb72332.repl.co/static/image2.jpg" alt="Home Banner">
+        <img class="img-fluid rounded" id="banner_0" src="https://JovianCareerswebsite.sanketdb72332.repl.co/static/image2.jpg" alt="Home Banner">
         <div class="overlay">
           <h1 class="mt-3 mb-3 m-auto">
             {{company_name}} Careers
           </h1>   
         </div>
       </li>
-
+      
       <div class='container'>
         <div class='sec-head' style='margin-bottom: 50px; margin-top: 50px;'>
           <div class="title-desc-wrap">
@@ -103,7 +109,7 @@
           </div>
         </div>
       </div>
-      <img class="img-fluid rounded" id="banner" src="https://JovianCareerswebsite.sanketdb72332.repl.co/static/image1.jpg" alt="Career Banner">   
+      <img class="img-fluid rounded" id="banner_1" src="https://JovianCareerswebsite.sanketdb72332.repl.co/static/image1.jpg" alt="challange-image">   
       <div class='container'>
         <div class='sec-head' style='margin-bottom: 50px; margin-top: 50px;'>
           <div class="title-desc-wrap">
@@ -113,6 +119,21 @@
             </h2>
             <p class='sec-desc'>
           Institution builders who can build on the steady foundation of our values and vision. Inspired by challenges, they are leading us into the next phase of global growth by implementing the best technologies and creating the right environment for the members to showcase performance par excellence.
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr>
+       <img class="img-fluid rounded" id="banner_1" src="https://JovianCareerswebsite.sanketdb72332.repl.co/static/image10.jpg" alt="work-life-bal-image">   
+      <div class='container'>
+        <div class='sec-head' style='margin-bottom: 50px; margin-top: 50px;'>
+          <div class="title-desc-wrap">
+            <h2 class="sec-title text-left mt-3 mb-3">
+              Promoting
+              <br><span class="cm-line-break small">Work-Life Balance</span>
+            </h2>
+            <p class='sec-desc'>
+              You're the hero of every Jovian story and you are treated as such. The company believes in a holistic approach to work and life by implementing policies that whole-heartedly promote member’s happiness.
             </p>
           </div>
         </div>
@@ -134,7 +155,7 @@
               <p class="card-text mb-auto">
                 At Jovian, you step into a life full of challenges and opportunities to evolve into a seasoned professional with strong values as part of your system.
               </p>
-              <a href="#" class="stretched-link">
+              <a href="https://stackoverflow.blog/2015/09/18/culture-of-trust/" class="stretched-link" target="_blank" rel="noopener">
                 Continue reading
               </a>
             </div>    
@@ -159,12 +180,12 @@
               <p class="card-text mb-auto">
                 Continuous innovation in technology and a dynamic global landscape are offering Opportunities Unlimited, which is why we are different.
               </p>
-              <a href="#" class="stretched-link">
+              <a href="https://tinybuddha.com/blog/the-beauty-of-being-different/" class="stretched-link" target="_blank" rel="noopener">
                 Continue reading
               </a>
             </div>
             <div class="col-auto d-none d-md-block m-auto">
-              <img class="rounded" src="https://JovianCareerswebsite.sanketdb72332.repl.co/static/image9.jpg" alt="Thumbnail" style="object-fit: cover; margin: 10px;" width="175" height="250">
+              <img class="rounded" src="https://JovianCareerswebsite.sanketdb72332.repl.co/static/image11.jpg" alt="Thumbnail" style="object-fit: cover; margin: 10px;" width="175" height="250">
             </div>
           </div>
         </div>
@@ -185,7 +206,24 @@
         </div>
 
         <div class="d-none d-md-block col-md-6 m-auto">
-          <img class="img-fluid rounded" src="https://JovianCareerswebsite.sanketdb72332.repl.co/static/image4.jpg" alt="job-image" style="height: @auto; border-radius: 4px;">
+          <div class="container position-relative">
+            <img class="img-fluid rounded" src="https://JovianCareerswebsite.sanketdb72332.repl.co/static/image4.jpg" alt="job-image" style="height: auto; border-radius: 4px;">
+            <div class="position-absolute top-0 start-0 p-4" style="margin-left: 10px;">
+              <div class="top-left">
+                <h2 class="white-text" style="color: white;">Road to Success
+                <br><span class="cm-line-break small">with Linkedin</span>
+                </h2>
+              </div>
+              <div class="top-left-subtxt">
+                <p style="color: white;">Check out these Expert-led courses across a variety of online class topics for every step of your career. Instructors with real-world experience.</p>
+              </div>
+            </div>
+            <div class="position-absolute bottom-0 end-0 translate-middle p-2">
+              <a href="https://www.linkedin.com/learning/" target="_blank" rel="noopener" class="btn btn-outline-light">
+                Know More
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       
@@ -197,7 +235,7 @@
           Jovian is a community-driven learning platform for software development and data science. Take online courses, build real-world projects and interact with a global community at www.jovian.ai
         </p>
         <div class="button-wrapper">
-          <a class="btn btn-primary" data-track="pioneer" href="#">
+          <a class="btn btn-primary" data-track="pioneer" href="#" target="_blank" rel="noopener">
             Learn about working at Jovian
           </a>
         </div>
