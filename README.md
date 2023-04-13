@@ -1,4 +1,4 @@
-![Capture](https://user-images.githubusercontent.com/109847409/209483977-facec311-98fd-44e1-9045-d4feebab6cce.PNG)
+![Capture](https://github.com/Sanket7994/Jovian_Careers_website/blob/main/The-Evolution-Of-Web-Development-Via-Machine-Learning.jpg)
 # Web Development Project: Jovia_Careers_website 
 
 A functional Flask &amp; Dynamic Database-driven careers website made with Python
