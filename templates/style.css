@@ -1,64 +1,96 @@
-title {
-  font-family: 'Barlow', sans-serif;
-  font-weight: normal;
-  font-kerning: auto;
-  font-size: 80px;
-  color: rgb(80, 80, 80);
+#banner_0 {
+  width: 100%;
+  height: 410px;
+  object-fit: cover;     
+}
+
+#banner_1 {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;     
+}
+
+#banner_2 {
+  width: 100%;
+  height: 250px;;
+  object-fit: cover;     
 }
 
 
-body {
+body, h1, h2, h3, h4 .bodytext, br {
   font-family: 'Barlow', sans-serif;
+}
+
+body {
   font-weight: normal;
   font-kerning: auto;
 }
 
 h1 {
-  font-family: 'Barlow', sans-serif;
-  font-size: 50px;
-  color: rgb(80, 80, 80);
-  text-align: center;
+  font-family: times new roman, serif;
+  font-size: 90px;
+  line-height: 1.5;
+  color: #FFFFFF;
 }
 
-#banner {
-  width: 100%;
-  height: 360px;
-  object-fit: cover;
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 50px;
+  }
 }
 
-.bodytext  {
-  font-family: 'Barlow', sans-serif;
-  color: rg(80, 80, 80);
-}
-
-h2 {
-  font-family: 'Barlow', sans-serif;
-  font-size: 30px;
-  color: rgb(80, 80, 80);
+h2, h3  {
+  font-size: 25px;
+  color: #505050;
   text-align: left;
+  font-weight: bold;
 }
 
-br {
-  font-family: 'Barlow', sans-serif;
+h4  {
   font-size: 20px;
-  color: rgb(250, 250, 250);
+  color:  #505050;
+  text-align: left;
+  font-weight: bold;
 }
 
-#container  {
-max-width: 720px;
-margin: 0 auto;
+.bodytext {
+  color: #505050;
 }
 
-.image {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
+span {
+  font-size: 25px;
+  font-weight: normal;
+  color: #828282;
+  display: inline-block;
 }
 
-.image:hover {
-  -webkit-filter: brightness(70%);
-  filter: brightness(70%);
+#container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+
+.image_wrapper {
+  position: relative;
+  list-style: none;
+}
+
+.overlay {
+  position: absolute; 
+  background: rgba(57, 57, 57, 0.5);
+  display: flex;
+  inset: 0;
+  border-radius: 3%;
+
+.job-txt {
+  position: absolute;
+  top: 150px;
+  left: 25px;
+}
+
+.location-text {
+  position: absolute;
+  top: 200px;
+  right: 30px;
 }
 

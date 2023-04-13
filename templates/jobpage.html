@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include 'bootstrap.html' %}
+    <title>{{job.title}} - Jovian Careers</title>
+    <style>
+      {% include 'style.css' %}
+      {% include 'job_form_style.css' %}
+    </style>
+  </head>
+  <body>
+    {% include "nav.html" %}
+    <div class="container">
+      <li class="image_wrapper">
+        <img class="img-fluid rounded" id="banner_2" src="https://JovianCareerswebsite.sanketdb72332.repl.co/static/image12.jpg" alt="job-banner">
+        <div class="overlay">
+          <h2 class="job-txt mt-3 mb-3 m-auto" style='font-size: 50px;
+            color: #ffff;font-weight: bold;'>
+            {{job.title}}
+          </h2>
+          <h4 class="location-text m-auto" style='font-size: 20px; color: #ffff;font-weight: norm;'>
+            {{job.location}}
+          </h4>
+        </div>
+      </li>   
+      <hr>
+      <h4>Responsibilities</h4>
+      <ul>
+        {% for line in job.responsibilities.split(".") %}
+        <li>{{line}}</li>
+        {% endfor %}
+      </ul>
+      <h4>Requirements</h4>
+      <ul>
+        {% for line in job.requirements.split(".") %}
+        <li>{{line}}</li>
+        {% endfor %}
+      </ul>
+      <h4>Proposed Salary</h4>
+      <p>{{job.currency}} {{job.salary}}</p>
+      <hr>
+      {% include 'application_form.html' %}
+      <hr>
+    </div>
+    {% include 'footer.html' %}
+  </body>
+</html>
